@@ -1,84 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/0c662949f8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/0c662949f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
 
-    <title>Document</title>
-</head>
-<body class="bg-dark text-white">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-lg-3">
-        <div class="container">
-          <a class="navbar-brand fs-2 fw-bold" href="#"><i class="fa-solid fa-pizza-slice"></i>PIZZ <span class="red">AAAAAA</span></a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-lg-2">
-                <a class="nav-link text-white active" href="#">Start</a>
-              </li>
-              <li class="nav-item mx-lg-2">
-                <a class="nav-link text-white" href="#products">Produkte</a>
-              </li>
-              <li class="nav-item mx-lg-2">
-                <a class="nav-link text-white" href="#about">Über Uns</a>
-              </li>
-              <li class="d-flex align-items-center mt-2 mt-lg-0 mx-lg-2">
-                <a href="#" class="icon-link text-white"> 
-                    <i class="fab fa-facebook fa-lg me-2"></i>
-                </a>
-                <a href="#" class="icon-link text-white">
-                    <i class="fab fa-twitter fa-lg mx-2"></i>
-                </a>
-                <a href="#" class="icon-link text-white">
-                    <i class="fab fa-instagram fa-lg mx-2"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <title>Pizza</title>
+  </head>
+  <body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-lg-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bold" href="#"
+          ><i class="fa-solid fa-pizza-slice"></i>PIZZ
+          <span class="red">AAAAAA</span></a
+        >
 
-      <!--Image Slider-->
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <div style="background-image: url('assets/image1.jpg');" class="slider-image"></div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <div style="background-image: url('assets/image2.jpg');" class="slider-image"></div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <div style="background-image: url('assets/image3.jpg');" class="slider-image"></div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-lg-2">
+              <a class="nav-link text-white active" href="#">Start</a>
+            </li>
+            <li class="nav-item mx-lg-2">
+              <a class="nav-link text-white" href="#products">Produkte</a>
+            </li>
+            <li class="nav-item mx-lg-2">
+              <a class="nav-link text-white" href="#about">Über Uns</a>
+            </li>
+            <li class="d-flex align-items-center mt-2 mt-lg-0 mx-lg-2">
+              <a href="#" class="icon-link text-white">
+                <i class="fab fa-facebook fa-lg me-2"></i>
+              </a>
+              <a href="#" class="icon-link text-white">
+                <i class="fab fa-twitter fa-lg mx-2"></i>
+              </a>
+              <a href="#" class="icon-link text-white">
+                <i class="fab fa-instagram fa-lg mx-2"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!--Image Slider-->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <div
+            style="background-image: url('assets/image1.jpg')"
+            class="slider-image"
+          ></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div
+            style="background-image: url('assets/image2.jpg')"
+            class="slider-image"
+          ></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div
+            style="background-image: url('assets/image3.jpg')"
+            class="slider-image"
+          ></div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-</body>
+    <!--INFORMATIONEN-->
+    <div class="container mt-5">
+      <h1 class="red fw-bold">Lecker Pizza!!!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit voluptate est pariatur. Molestias illum deserunt vitae, tempora saepe nemo aspernatur distinctio cupiditate amet nobis excepturi enim, dolores iure? Voluptates provident nam suscipit ad rerum ratione molestias doloribus nostrum, alias sint porro repellat ut, nulla, dolor illo. Ea, maxime at.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque fugiat, nesciunt aliquam, commodi distinctio vero hic dolorem ipsa corporis dicta veniam totam nobis error iusto repellat dignissimos ea labore ducimus? Ut quos culpa nam quia iste officia rem, hic, ipsam est, veniam debitis similique ipsa? Totam id quidem illum blanditiis nam nulla, itaque maxime quo. Dolor cupiditate possimus eligendi, similique a deleniti vel vero tenetur fugiat pariatur eius omnis eum eos blanditiis, dignissimos facere ex provident corrupti libero nisi. Ducimus veritatis optio harum minima, illum adipisci architecto explicabo a laborum dolorem! Molestias perferendis beatae nulla deserunt possimus dolor asperiores!</p>
+    </div>
+
+    <!--Produkte-->
+
+    <div id="products" class="container">
+      <h2 class="red fw-bold">Unsere beste Pizza</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quas soluta cumque quasi assumenda quae omnis in. Labore, exercitationem? Adipisci molestiae aliquid cum tenetur obcaecati, dolore eaque optio deserunt ad veniam atque alias laboriosam aut ullam autem praesentium cupiditate dicta. Nisi, beatae sequi molestiae quam minima dignissimos itaque excepturi mollitia neque placeat eaque deserunt error optio fugit rem explicabo magni distinctio iure dolorum nobis ratione temporibus corporis animi! Minus modi quasi, quos adipisci explicabo doloremque ipsam fugit ad iure dicta!
+      </p>
+      <div class="card-group text-dark">
+        <div class="card border-0 rounded-0">
+          <div style="background-image: url('assets/mitte1.jpg');" class="card-image"></div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-2">Quattro Stagioni</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card border-0 rounded-0">
+          <div style="background-image: url('assets/mitte2.jpg');" class="card-image"></div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-2">Capricciosa</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card border-0 rounded-0">
+          <div style="background-image: url('assets/mitte3.jpg');" class="card-image"></div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-2">Sardanella</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Über Uns-->
+    <div id="about" class="container">
+      <h2 class="red fw-bold">Unser Team</h2>
+      <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam possimus alias. Reprehenderit explicabo odit illo amet voluptatem, ad quaerat modi impedit? Doloremque magnam velit ipsa et tempore voluptatum ut ipsum blanditiis. Similique sapiente laborum nulla voluptatum quae culpa ea obcaecati inventore repellendus! Libero nemo aut esse officia voluptates ullam!</p>
+      <div class="my-5">
+        <div class="about-image float-lg-start mx-auto mx-lg-5" style="background-image: url('assets/happy-6889595_1280.jpg');"></div>
+        <div class="p-lg-5">
+          <h3 class="fs-2 red">Pizza Meister</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum consequuntur, quidem non impedit exercitationem natus ducimus reiciendis optio laudantium inventore magni sapiente magnam, provident aspernatur nemo porro? Aut provident, blanditiis quibusdam maiores eos praesentium! At commodi nobis expedita minus, voluptates nam vel ipsam rerum, eligendi tempora quasi eos, nostrum nisi?</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -7,7 +7,15 @@ body{
     color: red;
 }
 
+.navbar,
+.carousel{
+    border-bottom: 1px solid #888;
+}
 
+#products, #about{
+    padding-top: 80px;
+
+}
 
 .nav-link{
     cursor: pointer;
@@ -26,6 +34,22 @@ body{
 .slider-image{
     width: 100vw;
     height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-image{
+height: 500px;
+background-position: center;
+background-size: cover;
+}
+
+/* Über Uns*/
+
+.about-image{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
     background-position: center;
     background-size: cover;
 }
