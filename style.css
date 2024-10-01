@@ -26,9 +26,9 @@ body{
     color: red !important;
 }
 
-.icon-link:active svg,
-.icon-link:hover svg{
-    color: red;
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .slider-image{
@@ -43,6 +43,12 @@ height: 500px;
 background-position: center;
 background-size: cover;
 }
+@media (max-width: 991px){
+    .card-group{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
 
 /* Über Uns*/
 
@@ -52,4 +58,14 @@ background-size: cover;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
+}
+
+/* Footer */
+.footer{
+    background-color: #333;
+    color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+font-size: 1.2rem;
+border-top: 1px solid #888;
 }
